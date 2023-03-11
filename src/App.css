@@ -1,38 +1,93 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  max-width: 80vw;
+  background-color: rgba(0, 255, 255, 0.103);
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  margin: 0 auto;
+  padding: 5rem;
+}
+
+.alert {
+  background-color: lightcoral;
+  columns: #eee;
+}
+.grand__title {
+  font-size: 1.8rem;
+}
+
+form {
+  /* background-color: blueviolet; */
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button, input {
+  outline: none;
+  min-width: 20vw;
+  padding: 0.2rem 0.8rem;
+  margin-bottom: 0.8rem;
+  border-radius: 0.5rem;
+}
+.input__desc{
+  height: 5rem;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  padding: .8rem;
+  width: 20vw;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  resize : none
+}
+button {
+  background-color: rgb(194, 194, 36);
+  color: #000022;
+  cursor: pointer;
+  padding: 0.2rem 10rem;
+}
+
+.mylist{
+  width: 70vw;
+  background: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+}
+.todo{
+  background-color: rgba(0, 255, 255, 0.103);
+  min-width: 90%;
+  padding: 1rem .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius : 7px;
+}
+
+.icons{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.edit, .delete{
+  size: 10rem;
+  cursor: pointer;
+}
+.edit{
+  color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.delete{
+  color: red;
 }
+
